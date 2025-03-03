@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.23af0050.css",
+    "main.js": "/static/js/main.ff545f35.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/concert.mp4": "/static/media/concert.b29cc0e47b33fc15b2b9.mp4",
+    "static/media/drink.mp4": "/static/media/drink.e23f93baa539967d5571.mp4",
+    "static/media/auroraInk.mp4": "/static/media/auroraInk.e581c732b6057cd1b41c.mp4",
+    "static/media/cclogo.png": "/static/media/cclogo.39cd8f083f2645ae0cc2.png",
+    "static/media/lucas.jpeg": "/static/media/lucas.142ddbd0fc6dc1dda511.jpeg",
+    "static/media/Rockybilly.ttf": "/static/media/Rockybilly.028655494c60619766ff.ttf",
+    "static/media/Outfit-SemiBold.ttf": "/static/media/Outfit-SemiBold.ea851e9b6c1d21f620c1.ttf",
+    "static/media/Outfit-Regular.ttf": "/static/media/Outfit-Regular.e853df41b41bc9489a8b.ttf",
+    "static/media/Outfit-Light.ttf": "/static/media/Outfit-Light.27737e30f9f52f95ba31.ttf",
+    "static/media/Andasia.ttf": "/static/media/Andasia.24dc017297a63194ec9a.ttf",
+    "index.html": "/index.html",
+    "main.23af0050.css.map": "/static/css/main.23af0050.css.map",
+    "main.ff545f35.js.map": "/static/js/main.ff545f35.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23af0050.css",
+    "static/js/main.ff545f35.js"
+  ]
+}
