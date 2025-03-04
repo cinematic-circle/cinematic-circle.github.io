@@ -72,7 +72,6 @@
 
 .textContainer {
   text-align: center;
-  /* padding: 7rem 1rem; */
   z-index: 97;
   font-family: outfit;
   inset: 0;
@@ -88,43 +87,26 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.textThree {
-  z-index: 99;
-  font-size: 70px;
-  text-shadow: 2px 8px black;
-  /* right: 20px; */
-  font-weight: bold;
-  display: flex;
-  color: whitesmoke;
-  @media (min-width: 620px) {
-    font-size: 80px;
-  }
-  @media (min-width: 800px) {
-    font-size: 100px;
-  }
-  @media (min-width: 1240px) {
-    font-size: 130px;
-  }
-}
 .textTwo {
   font-family: rocky;
-  font-size: 60px;
+  font-size: 50px;
+  text-shadow: 2px 8px black;
   position: absolute;
   z-index: 99;
   color: whitesmoke;
-  text-shadow: 2px 8px black;
   inset: 0;
-  top: 30rem;
-  right: 4rem;
+  top: 18rem;
+  right: 2.5rem;
 }
 
 .textThree {
   position: absolute;
   justify-content: end;
   font-family: rocky;
-  font-size: 55px;
-  top: 11rem;
-  right: 4.5rem;
+  font-size: 50px;
+  text-shadow: 2px 8px black;
+  top: 8rem;
+  right: 1rem;
   color: whitesmoke;
   @media (max-width: 374px) {
     font-size: 45px;

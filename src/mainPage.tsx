@@ -52,11 +52,11 @@ function MainPage() {
     if (isVideoReady) {
       gsap.fromTo(
         ".textOne",
-        { x: startyX },
+        { x: -startyX },
         { duration: 3, x: 0, ease: "slow" }
       );
       gsap.fromTo(
-        ".textTwo",
+        ".textThree",
         { x: startyX },
         { duration: 3, x: 0, ease: "slow" }
       );
@@ -233,13 +233,13 @@ function MainPage() {
                 transition={{ delay: 1.5, duration: 2 }}
                 className="textOne"
               >
-                <img src={cclogo} alt="logo" height={"50%"} width={"50%"} />
+                <img src={cclogo} alt="logo" height={"60%"} width={"60%"} />
               </motion.div>
 
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 2.5, duration: 2 }}
+                transition={{ duration: 2 }}
                 className="textThree"
               >
                 Cinematic
@@ -247,7 +247,7 @@ function MainPage() {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 2.5 }}
+                transition={{ delay: 2.5, duration: 2.5 }}
                 className="textTwo"
               >
                 Circle
