@@ -88,10 +88,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.textTwo,
 .textThree {
   z-index: 99;
   font-size: 70px;
+  text-shadow: 2px 8px black;
   /* right: 20px; */
   font-weight: bold;
   display: flex;
@@ -106,13 +106,25 @@
     font-size: 130px;
   }
 }
+.textTwo {
+  font-family: rocky;
+  font-size: 60px;
+  position: absolute;
+  z-index: 99;
+  color: whitesmoke;
+  text-shadow: 2px 8px black;
+  inset: 0;
+  top: 30rem;
+  right: 4rem;
+}
 
 .textThree {
   position: absolute;
   justify-content: end;
   font-family: rocky;
-  font-size: 45px;
+  font-size: 55px;
   top: 11rem;
+  right: 4.5rem;
   color: whitesmoke;
   @media (max-width: 374px) {
     font-size: 45px;
@@ -129,9 +141,9 @@
     right: 4rem;
   }
   @media (min-width: 1240px) {
-    font-size: 100px;
-    top: 9rem;
-    right: 4rem;
+    font-size: 90px;
+    top: 30rem;
+    right: 45rem;
   }
 }
 
@@ -170,7 +182,6 @@
   flex-direction: column;
 }
 .portfolioSection {
-  padding: 0 2rem;
   @media (min-width: 820px) {
     flex-direction: row;
     align-items: center;
@@ -280,9 +291,7 @@
   }
 }
 .portfolioImage {
-  border-radius: 1rem;
   width: 100%;
-  box-shadow: rgba(255, 255, 255, 0.4) 0 0 90px 23px;
   object-fit: cover;
   z-index: 97;
   object-position: center;

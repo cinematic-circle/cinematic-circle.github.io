@@ -236,20 +236,22 @@ function MainPage() {
                 <img src={cclogo} alt="logo" height={"50%"} width={"50%"} />
               </motion.div>
 
-              {/* <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 2.5, duration: 2 }}
-                  className="textThree"
-                >
-                  Circle
-                </motion.div> */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 2.5, duration: 2 }}
+                className="textThree"
+              >
+                Cinematic
+              </motion.div>
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2.5 }}
                 className="textTwo"
-              ></motion.div>
+              >
+                Circle
+              </motion.div>
             </div>
           )}
         </div>
