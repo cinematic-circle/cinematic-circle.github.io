@@ -27,7 +27,7 @@
   position: relative;
   tex-align: center;
   user-select: none;
-  background-color: whitesmoke;
+  background-color: black;
   @media (min-width: 1540px) {
     display: flex;
     justify-content: center;
@@ -183,7 +183,7 @@
 }
 
 .aboutSection {
-  background-color: whitesmoke;
+  background-color: black;
   justify-content: start;
   @media (min-width: 1024px) {
     width: 100%;
@@ -194,7 +194,7 @@
 
 .contactSection {
   position: relative;
-  background-color: whitesmoke;
+  background-color: black;
 }
 
 .portfolioSection {
@@ -221,7 +221,12 @@
   display: flex;
   align-items: flex-end;
   padding-bottom: 4rem;
-  background-image: linear-gradient(to bottom, transparent 30%, #f5f5f5 80%),
+  color: whitesmoke;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 30%,
+      rgb(0, 0, 0) 85%
+    ),
     url(./assets/lucas.jpeg);
   background-position: center;
   background-repeat: no-repeat;

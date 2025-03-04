@@ -266,13 +266,7 @@ function MainPage() {
               >
                 <h2>Cinematic Circle</h2>
                 <p>
-                  Hey!<br></br> I'm Tilde - a passionate tattoo artist with
-                  nearly 4 years of experience. <br />I specialize in Fine Line
-                  tattooing, creating delicate and intricate designs with
-                  precision and artistry. <br />
-                  While Fine Line is my specialty, I´m always excited to take on
-                  new and creative projects. <br />
-                  Let’s bring your ideas to life!
+                  Hey!<br></br> I'm Lucas!
                 </p>
               </motion.div>
             </div>
@@ -307,13 +301,7 @@ function MainPage() {
                   transition={{ duration: 1 }}
                 >
                   <h2>Cinematic Circle</h2>
-                  Hey!<br></br> I'm Tilde - a passionate tattoo artist with
-                  nearly 4 years of experience. <br />I specialize in Fine Line
-                  tattooing, creating delicate and intricate designs with
-                  precision and artistry. <br />
-                  While Fine Line is my specialty, I´m always excited to take on
-                  new and creative projects. <br />
-                  Let’s bring your ideas to life!
+                  Hey!<br></br> I'm Lucas
                 </motion.div>
               </div>
             </div>
