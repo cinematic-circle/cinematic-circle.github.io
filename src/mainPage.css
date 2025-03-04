@@ -106,7 +106,7 @@
   font-size: 50px;
   text-shadow: 2px 8px black;
   top: 8rem;
-  right: 1rem;
+  right: 2rem;
   color: whitesmoke;
   @media (max-width: 374px) {
     font-size: 45px;
