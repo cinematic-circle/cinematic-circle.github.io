@@ -29,6 +29,8 @@ function MainPage() {
   const drink = require("./assets/drink.mp4");
   const concert = require("./assets/concert.mp4");
   const cclogo = require("./assets/cclogo.png");
+  const sunset = require("./assets/sunset.mp4");
+  const lucas = require("./assets/lucas.mp4");
 
   const media = [
     {
@@ -51,14 +53,19 @@ function MainPage() {
 
     if (isVideoReady) {
       gsap.fromTo(
-        ".textOne",
+        ".textThree",
         { x: -startyX },
         { duration: 3, x: 0, ease: "slow" }
       );
       gsap.fromTo(
-        ".textThree",
+        ".textTwo",
         { x: startyX },
         { duration: 3, x: 0, ease: "slow" }
+      );
+      gsap.fromTo(
+        ".textOne",
+        { y: -100 },
+        { delay: 1.5, duration: 3, y: 0, ease: "slow" }
       );
     }
 
@@ -181,59 +188,31 @@ function MainPage() {
             }
             return null;
           })}
+          <motion.video
+            initial={{ opacity: 0 }}
+            animate={isVideoReady ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ delay: 0.3, duration: 3 }}
+            className="image"
+            width="100%"
+            height="100%"
+            muted
+            autoPlay={true}
+            loop={true}
+            playsInline
+            onLoadedData={() => setIsVideoReady(true)}
+          >
+            <source src={sunset} type="video/mp4" />
+          </motion.video>
 
-          {!isTablet && !isMobile
-            ? media
-                .filter((item) => item.type === "video")
-                .slice(0, 3)
-                .map((item, index) => (
-                  <motion.video
-                    initial={{ opacity: 0 }}
-                    animate={isVideoReady ? { opacity: 1 } : { opacity: 0 }}
-                    transition={{ delay: 0.3, duration: 3 }}
-                    className="image"
-                    key={index}
-                    width="100%"
-                    height="95%"
-                    muted
-                    autoPlay={true}
-                    loop={true}
-                    playsInline
-                    onLoadedData={() => setIsVideoReady(true)}
-                  >
-                    <source src={item.src} type="video/mp4" />
-                  </motion.video>
-                ))
-            : (() => {
-                const videos = media.filter((item) => item.type === "video");
-                const secondVideo = videos.length > 1 ? videos[1] : videos[0];
-                return secondVideo ? (
-                  <motion.video
-                    initial={{ opacity: 0 }}
-                    animate={isVideoReady ? { opacity: 1 } : { opacity: 0 }}
-                    transition={{ delay: 0.3, duration: 3 }}
-                    className="imageMobile"
-                    width="100%"
-                    height="100%"
-                    autoPlay={true}
-                    loop={true}
-                    muted
-                    playsInline
-                    onLoadedData={() => setIsVideoReady(true)}
-                  >
-                    <source src={secondVideo.src} type="video/mp4" />
-                  </motion.video>
-                ) : null;
-              })()}
           {isVideoReady && (
             <div className="textContainer">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1.5, duration: 2 }}
+                transition={{ delay: 2.5, duration: 2 }}
                 className="textOne"
               >
-                <img src={cclogo} alt="logo" height={"60%"} width={"60%"} />
+                <img src={cclogo} alt="logo" height={"10%"} width={"10%"} />
               </motion.div>
 
               <motion.div
@@ -242,15 +221,15 @@ function MainPage() {
                 transition={{ duration: 2 }}
                 className="textThree"
               >
-                Cinematic
+                circle
               </motion.div>
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 2.5, duration: 2.5 }}
+                transition={{ duration: 2.5 }}
                 className="textTwo"
               >
-                Circle
+                cinematic
               </motion.div>
             </div>
           )}
@@ -258,6 +237,10 @@ function MainPage() {
         <div ref={aboutRef} className="aboutSection scrollSection">
           {isMobile || isTablet ? (
             <div className="aboutImage">
+              <video autoPlay loop muted playsInline className="aboutVideo">
+                <source src={lucas} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
               <motion.div
                 className="aboutTextMobile"
                 initial={{ opacity: 0 }}
@@ -268,30 +251,20 @@ function MainPage() {
               >
                 <h2>Cinematic Circle</h2>
                 <p>
-                  Hey!<br></br> I'm Lucas!
+                  Hey!
+                  <br /> I'm Lucas!
                 </p>
               </motion.div>
             </div>
           ) : (
             <div className="aboutPageDesktop">
-              <div className="aboutImage"></div>
+              <div className="aboutImage">
+                <video autoPlay loop muted playsInline className="aboutVideo">
+                  <source src={lucas} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
               <div className="aboutTextContainer">
-                <svg
-                  className="bubblesAboutPage"
-                  preserveAspectRatio="xMidYMid slice"
-                  viewBox="10 10 80 80"
-                >
-                  <path
-                    fill="#000"
-                    className="out-bottom"
-                    d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"
-                  />
-                  <path
-                    fill="#fff"
-                    className="in-bottom"
-                    d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"
-                  />
-                </svg>
                 <motion.div
                   className="aboutTextDesktop"
                   initial={{ opacity: 0 }}
@@ -303,7 +276,10 @@ function MainPage() {
                   transition={{ duration: 1 }}
                 >
                   <h2>Cinematic Circle</h2>
-                  Hey!<br></br> I'm Lucas
+                  <p>
+                    Hey
+                    <br /> I'm Lucas bitch
+                  </p>
                 </motion.div>
               </div>
             </div>

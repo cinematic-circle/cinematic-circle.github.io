@@ -23,6 +23,11 @@
   src: url(../fonts/Rockybilly.ttf);
 }
 
+@font-face {
+  font-family: poiretOne;
+  src: url(../fonts/PoiretOne-Regular.ttf);
+}
+
 .pageWrapper {
   position: relative;
   tex-align: center;
@@ -83,28 +88,27 @@
 
 .textOne {
   position: relative;
-  top: 50%;
+  top: 13%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .textTwo {
-  font-family: rocky;
-  font-size: 50px;
-  text-shadow: 2px 8px black;
+  font-family: poiretOne;
+  font-size: 70px;
+  text-shadow: 2px 2px black;
   position: absolute;
   z-index: 99;
   color: whitesmoke;
-  inset: 0;
-  top: 18rem;
-  right: 2.5rem;
+  top: 2.5rem;
+  left: 2rem;
 }
 
 .textThree {
   position: absolute;
   justify-content: end;
-  font-family: rocky;
+  font-family: poiretOne;
   font-size: 50px;
-  text-shadow: 2px 8px black;
+  text-shadow: 2px 2px black;
   top: 8rem;
   right: 2rem;
   color: whitesmoke;
@@ -123,9 +127,9 @@
     right: 4rem;
   }
   @media (min-width: 1240px) {
-    font-size: 90px;
-    top: 30rem;
-    right: 45rem;
+    font-size: 70px;
+    top: 2.5rem;
+    right: 2rem;
   }
 }
 
@@ -174,10 +178,53 @@
   width: 100%;
   align-items: center;
 }
+.aboutImage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #eed9c4 3%, transparent 50%);
+    z-index: 1;
+  }
+
+  .aboutVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+}
+
+.aboutTextMobile,
+.aboutTextDesktop {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  font-family: poiretOne;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
 
 .aboutSection {
-  background-color: black;
+  background-color: #eed9c4;
   justify-content: start;
+
   @media (min-width: 1024px) {
     width: 100%;
     display: flex;
@@ -201,37 +248,16 @@
   object-fit: cover;
   z-index: 97;
   object-position: center;
-  @media (min-width: 820px) {
-    width: 33%;
-  }
 }
 
 .imageMobile {
   object-fit: cover;
 }
 
-.aboutImage {
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 4rem;
-  color: whitesmoke;
-  background-image: linear-gradient(
-      to bottom,
-      transparent 30%,
-      rgb(0, 0, 0) 85%
-    ),
-    url(./assets/lucas.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  @media (min-width: 1024px) {
-    width: 50%;
-  }
-}
 .aboutTextContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   position: relative;
   height: 100%;
