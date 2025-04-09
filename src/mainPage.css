@@ -88,19 +88,46 @@
 
 .textOne {
   position: relative;
-  top: 13%;
-  left: 50%;
+  top: 11%;
+  left: 62%;
   transform: translate(-50%, -50%);
+  @media (min-width: 389px) {
+    top: 8.5%;
+  }
+  @media (min-width: 429px) {
+    top: 8%;
+  }
+  @media (min-width: 1240px) {
+    top: 11%;
+    left: 50%;
+  }
 }
 .textTwo {
   font-family: poiretOne;
-  font-size: 70px;
+  font-size: 50px;
   text-shadow: 2px 2px black;
   position: absolute;
   z-index: 99;
   color: whitesmoke;
-  top: 2.5rem;
-  left: 2rem;
+  top: 2rem;
+  left: 1rem;
+  @media (max-width: 374px) {
+    font-size: 45px;
+    top: 16rem;
+  }
+  @media (min-width: 620px) {
+    font-size: 55px;
+    top: 2rem;
+  }
+  @media (min-width: 800px) {
+    font-size: 80px;
+    top: 3rem;
+  }
+  @media (min-width: 1240px) {
+    font-size: 70px;
+    top: 2rem;
+    left: 2rem;
+  }
 }
 
 .textThree {
@@ -109,8 +136,8 @@
   font-family: poiretOne;
   font-size: 50px;
   text-shadow: 2px 2px black;
-  top: 8rem;
-  right: 2rem;
+  top: 2rem;
+  right: 1rem;
   color: whitesmoke;
   @media (max-width: 374px) {
     font-size: 45px;
@@ -118,18 +145,18 @@
   }
   @media (min-width: 620px) {
     font-size: 55px;
-    top: 10rem;
+    top: 2rem;
     right: 4rem;
   }
   @media (min-width: 800px) {
     font-size: 80px;
-    top: 10rem;
+    top: 3rem;
     right: 4rem;
   }
   @media (min-width: 1240px) {
     font-size: 70px;
-    top: 2.5rem;
-    right: 2rem;
+    top: 2rem;
+    right: 5rem;
   }
 }
 

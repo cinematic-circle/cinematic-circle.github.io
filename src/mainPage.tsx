@@ -352,7 +352,7 @@ function MainPage() {
             <h2>Contact Me</h2>
             <p>
               Get in touch with me through email for future business
-              collaborations, such as renting a place in my studio.
+              collaborations.
             </p>
             <button
               className={`emailButton ${emailCopied ? "copied" : ""}`}
@@ -370,10 +370,10 @@ function MainPage() {
               </svg>
               <span className="linkCopiedText">Email copied</span>
             </button>
-            <h2>Booking tattoo appointment</h2>
+            <h2>Portfolio</h2>
             <p>
-              To book an appointment for a tattoo with me, please click forward
-              to my instagram page and send me a message.
+              To see what I have been working on and projects I have created,
+              check out my instagram below!
             </p>
             <a
               href="https://www.instagram.com/aurorainkstudio/"
@@ -424,7 +424,7 @@ function MainPage() {
               transition={{ duration: 1 }}
               className="footerText"
             >
-              Aurora Ink Studio ©
+              Cinematic Circle ©
             </motion.div>
           </footer>
         </div>
