@@ -32,7 +32,7 @@
   position: relative;
   tex-align: center;
   user-select: none;
-  background-color: black;
+  background-color: #eed9c4;
   @media (min-width: 1540px) {
     display: flex;
     justify-content: center;
@@ -115,7 +115,7 @@
   z-index: 99;
   color: whitesmoke;
   top: 2rem;
-  left: 3rem;
+  left: 2rem;
   @media (max-width: 374px) {
     font-size: 45px;
     top: 16rem;
@@ -142,7 +142,7 @@
   font-size: 50px;
   text-shadow: 2px 2px black;
   top: 2rem;
-  right: 3.5rem;
+  right: 2rem;
   color: whitesmoke;
   @media (max-width: 374px) {
     font-size: 45px;
@@ -255,7 +255,7 @@
 
 .aboutSection {
   background-color: #eed9c4;
-  justify-content: start;
+  justify-content: center;
   width: 100%;
 
   @media (min-width: 1024px) {
@@ -266,11 +266,11 @@
 
 .contactSection {
   position: relative;
-  background-color: black;
+  background-color: #eed9c4;
 }
 
 .portfolioSection {
-  background-color: black;
+  background-color: #eed9c4;
   overflow: hidden;
   justify-content: space-between;
 }
