@@ -88,22 +88,23 @@
 
 .textOne {
   position: relative;
-  top: 9%;
-  left: 62%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
 
   @media (min-width: 429px) {
-    top: 9%;
-  }
-  @media (min-width: 429px) {
-    top: 9%;
+    height: 150px;
+    width: 150px;
   }
   @media (min-width: 799px) {
-    top: 13.5%;
+    height: 160px;
+    width: 160px;
   }
   @media (min-width: 1240px) {
-    top: 11%;
-    left: 50%;
+    height: 170px;
+    width: 170px;
   }
 }
 .textTwo {
@@ -114,7 +115,7 @@
   z-index: 99;
   color: whitesmoke;
   top: 2rem;
-  left: 1rem;
+  left: 3rem;
   @media (max-width: 374px) {
     font-size: 45px;
     top: 16rem;
@@ -141,7 +142,7 @@
   font-size: 50px;
   text-shadow: 2px 2px black;
   top: 2rem;
-  right: 1rem;
+  right: 3.5rem;
   color: whitesmoke;
   @media (max-width: 374px) {
     font-size: 45px;
@@ -255,9 +256,9 @@
 .aboutSection {
   background-color: #eed9c4;
   justify-content: start;
+  width: 100%;
 
   @media (min-width: 1024px) {
-    width: 100%;
     display: flex;
     flex-direction: row;
   }

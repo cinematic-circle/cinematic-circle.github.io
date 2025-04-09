@@ -64,7 +64,7 @@ function MainPage() {
       );
       gsap.fromTo(
         ".textOne",
-        { y: -100 },
+        { y: 0 },
         { delay: 1.5, duration: 3, y: 0, ease: "slow" }
       );
     }
@@ -212,7 +212,7 @@ function MainPage() {
                 transition={{ delay: 2.5, duration: 2 }}
                 className="textOne"
               >
-                <img src={cclogo} alt="logo" height={"10%"} width={"10%"} />
+                <img src={cclogo} alt="logo" height={"100%"} width={"100%"} />
               </motion.div>
 
               <motion.div
