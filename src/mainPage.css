@@ -116,7 +116,7 @@
   color: whitesmoke;
   top: 2rem;
   left: 2rem;
-  @media (max-width: 374px) {
+  /* @media (max-width: 374px) {
     font-size: 45px;
     top: 16rem;
   }
@@ -132,7 +132,7 @@
     font-size: 70px;
     top: 2rem;
     left: 2rem;
-  }
+  } */
 }
 
 .textThree {
@@ -144,7 +144,7 @@
   top: 2rem;
   right: 2rem;
   color: whitesmoke;
-  @media (max-width: 374px) {
+  /* @media (max-width: 374px) {
     font-size: 45px;
     top: 16rem;
   }
@@ -162,7 +162,7 @@
     font-size: 70px;
     top: 2rem;
     right: 5rem;
-  }
+  } */
 }
 
 .listContainer,
