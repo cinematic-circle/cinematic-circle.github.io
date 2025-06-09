@@ -147,7 +147,7 @@ function MainPage() {
     }
   };
   const handleEmailCopy = () => {
-    const email = "aurorainkstudio@gmail.com";
+    const email = "lucas.assarsson@hotmail.com";
     navigator.clipboard.writeText(email).then(() => {
       setEmailCopied(true);
       setTimeout(() => {
@@ -376,7 +376,7 @@ function MainPage() {
               check out my instagram below!
             </p>
             <a
-              href="https://www.instagram.com/aurorainkstudio/"
+              href="https://www.instagram.com/cinematiccircle/"
               className="instagramButton"
             >
               <svg
